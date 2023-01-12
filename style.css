@@ -1,10 +1,10 @@
-#navbar {
+ul[id="navbar"]{
     height: 60px;
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: gray;
+    background-color: #7ED9C3;
     border-style: solid;
     border-color: black;
 }
@@ -20,35 +20,34 @@ img {
     mix-blend-mode: multiply;
 }
 
-#linavbar {
+li[id="linavbar"] {
     display: inline;
     float: left;
     border-right: 3px solid black;
 }
 
-#linavbar a {
+ul[id="navbar"] li:last-child {
+    border-right: none;
+}
+
+li[id="linavbar"] a {
     display: block;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
-    color: white;
+    color: black;
     height: 60px;
     font-size: 20px;
 }
 
-
-
-#navbar > li:last-child {
-    border-right: none;
-}
-
-#navbar li a:hover {
+ul[id="navbar"] li a:hover {
     background-color: #78CBCF;
     color: black;
 }
 
-.actual{
-    background-color: #04AA6D;    
+a[class="actual"] { 
+    background-color: #04AA6D;
+    color: black;
 }
 
 .mapa {
@@ -65,7 +64,7 @@ p {
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: #04AA6D;
+    background-color: #CEF0DE;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 10px;
     border-style: solid;
