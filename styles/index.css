@@ -1,0 +1,202 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(/imagenes/fondo.webp);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.presentacion {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.presentacion h1 {
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.presentacion p {
+    display: flex;
+    justify-content: center;
+    background-color: #CEF0DE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #7ED9C3;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 20%;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img {
+    height: 50px;
+    display: flex;
+
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 20%;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.mapa iframe {
+    border: 3px solid black;
+    border-radius: 6%;
+    width: 950px;
+    height: 480px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+
+
+.buscador {
+    margin: 20px 22px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+.columna {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .presentacion {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    
+    .mapa iframe {
+        height: 450px;
+        width: 550px;
+        
+    }
+    
+    .redes {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 415px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .redes img {
+            flex-direction: column;
+            height: 20px;
+            display: flex;
+        
+    }
+
+    .mapa iframe {
+        width: 350px;
+    }
+
+    .pie {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1125px) {
+    .presentacion {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
