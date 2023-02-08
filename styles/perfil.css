@@ -1,0 +1,269 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(/imagenes/fondo.webp);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #7ED9C3;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.actual {
+    text-decoration-line:underline overline;
+    transition: 0.5s ease;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 20%;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img {
+    height: 50px;
+    display: flex;
+
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 20%;
+    height: 80px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 320px;
+}
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#CEF0DE,#78CBCF);
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#CEF0DE,#78CBCF);
+    filter: blur(30px);
+  }
+  
+  .card b {
+    position: absolute;
+    inset: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+  
+  .card img {
+    position: absolute;
+    z-index: 3;
+    scale: 0.8;
+    opacity: 0.25;
+    transition: 0.5s;
+  }
+  
+  .card:hover img {
+    scale: 0.5;
+    opacity: 0.9;
+    transform: translateY(-70px);
+  }
+  
+  .card .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .card:hover .content {
+    transform: scale(1);
+    bottom: 25px;
+  }
+  
+  .content .title {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .content .title span {
+    font-weight: 300;
+    font-size: 0.70em;
+  }
+  
+  .content .sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .sci li {
+    list-style: none;
+  }
+  
+  .sci li .fa-brands {
+    width: 14px;
+  }
+  
+  .sci li .fa-facebook {
+    width: 10px;
+  }
+  
+  .sci li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  .sci li a:hover {
+    fill: currentColor;
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+
+
+@media (max-width: 700px) {
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 415px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .redes img {
+            flex-direction: column;
+            height: 20px;
+            display: flex;
+        
+    }
+
+    .pie {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1125px) {
+    .contacto {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
