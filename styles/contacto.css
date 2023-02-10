@@ -249,6 +249,11 @@ button:hover span {
     .redes {
         flex-direction: column;
     }
+
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
