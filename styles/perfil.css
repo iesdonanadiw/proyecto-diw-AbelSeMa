@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  background-image: url(/imagenes/fondo.webp);
+  background-image: url(../imagenes/fondo.webp);
 }
 
 
@@ -90,85 +90,56 @@ a {
   text-decoration: none;
   color: black;
 }
-.contacto {
-  margin-top: 14px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.contacto p {
-  background-color: #CEF0DE;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 10px;
-  border-style: solid;
-  padding: 5px 15px 5px 15px;
-  font-weight: bold;
-  
-}
 
-.formulario {
-  padding: 5px 20px 0px 20px;
-  gap: 30px;
-}
-
-.form {
-  position: relative;
+.container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: #78CBCF;
-  backdrop-filter: blur( 2px );
-  border: 1px solid #ffffff2e;
-  border-radius: 16px;
-  padding: 32px;
-  width: 250px;
-  box-shadow: 16px 18px 12px rgba(18, 18, 18, 0.04), 50px 60px 102px rgba(18, 18, 18, 0.1);
+  gap: 4px;
 }
 
-/*titulos formulario*/
-.title {
-  font-weight: 700;
-  text-align: center;
-  font-size: 1.7rem;
-}
-
-/*Caja imputs*/
-.form-container {
-  overflow: hidden;
-  border-radius: 12px;
-  background-color: #fff;
-  margin: 5px 10px 5px 10px;
-  width: 100%;
-}
-
-.input {
-  background: none;
-  border: 0;
-  outline: 0;
-  height: 40px;
-  width: 100%;
-  border-bottom: 1px solid #eee;
-  font-size: .75rem;
-  padding: 8px 15px;
-}
-
-.form a {
-  text-align: center;
+.descripcion {
+  margin-top: 120px;
+  width: 300px;
+  height: 100%;
+  border: 4px solid #7cdacc;
+  background: #2cb5a0;
   color: #fff;
-  font-weight: bold;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+}
+ 
+.descripcion h4 {
+  text-align: center;
 }
 
-.form a:hover {
-  color: black;
+.descripcion p {
+  margin: 10px 10px 10px 10px;
 }
 
-.formulario {
+.rese {
+  margin-top: 98px;
+}
+
+
+.botones {
   display: flex;
-  justify-content: center;
+  margin-left: 13px;
+  margin-top: 10px;
+  gap: 10px;
 }
 
-.soporte {
-  font-size: 15px;
-  font-weight: bold;
+.botones button {
+  background-color: #00000066;
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+  padding: 10px 16px;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.botones button:hover {
+  color: black;
 }
 
 .perfil {
@@ -189,22 +160,20 @@ a {
   text-align: center;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
+
 }
 
-
-
-.user-picture {
+.c-foto {
+  width: 205spx;
+  height: 250px;
+  background: #CCC;
   overflow: hidden;
-  object-fit: cover;
-  width: 5rem;
-  height: 5rem;
   border: 4px solid #7cdacc;
-  border-radius: 999px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+}
+
+.c-foto img {
+  width: 100%;
+  height: auto;
 }
 
 .user-picture svg {
@@ -287,3 +256,77 @@ a {
   opacity: 1;
   transform: translate(-50%, -130%);
 }
+
+
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides-item {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 100px;
+  height: 600px;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform .5s;
+  width: 100%;
+}
+
+.carousel__nav {
+  padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: .5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slide-1 {
+  background-color: #fdc;
+}
+
+.slide-2 {
+  background-color: #bfd;
+}
+
+.slide-3 {
+  background-color: #cdf;
+}
+
+.slide-4 {
+  background-color: #dca;
+}
+
+.slide-5 {
+  background-color: #ffc;
+}
+
+
