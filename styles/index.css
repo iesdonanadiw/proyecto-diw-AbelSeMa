@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-image: url(/imagenes/fondo.webp);
+    background-image: url(../imagenes/fondo.webp);
 }
 
 a {

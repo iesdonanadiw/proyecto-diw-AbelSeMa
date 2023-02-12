@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-image: url(/imagenes/fondo.webp);
+    background-image: url(../imagenes/fondo.webp);
 }
 
 
@@ -106,7 +106,6 @@ a {
 }
 
 .formulario {
-    padding: 5px 20px 0px 20px;
     gap: 30px;
 }
 
@@ -136,7 +135,6 @@ a {
     overflow: hidden;
     border-radius: 12px;
     background-color: #fff;
-    margin: 5px 10px 5px 10px;
     width: 100%;
   }
   
