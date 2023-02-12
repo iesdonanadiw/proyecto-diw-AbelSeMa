@@ -91,15 +91,10 @@ a {
   color: black;
 }
 
-.container {
-  display: flex;
-  gap: 4px;
-}
-
 .descripcion {
   margin-top: 120px;
   width: 300px;
-  height: 100%;
+  height: 471px;
   border: 4px solid #7cdacc;
   background: #2cb5a0;
   color: #fff;
@@ -113,10 +108,6 @@ a {
 
 .descripcion p {
   margin: 10px 10px 10px 10px;
-}
-
-.rese {
-  margin-top: 98px;
 }
 
 
@@ -145,6 +136,7 @@ a {
 .perfil {
   padding-top: 120px;
   padding-left: 80px;
+  margin-top: 48px;
 }
 
 .card-client {
@@ -257,76 +249,92 @@ a {
   transform: translate(-50%, -130%);
 }
 
+/* tarjeta de reseñas */
 
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
-.carousel {
-  margin: 0 auto;
-  overflow: hidden;
+.propietario {
+  display: flex;
+  align-items: start;
+  height: 150px;
+}
+
+.datos {
+  width: 390px;
+  height: 150px;
+}
+
+.lugar {
   text-align: center;
 }
 
-.slides {
-  display: flex;
+.propietario img {
+  padding: 10px;
+  width: 80px;
+  border-radius:80px;
 }
 
-.slides-item {
-  align-items: center;
+
+.rese {
+  margin-top: 47px;
+  width: 500px;
+  
+}
+
+.ultima {
+  text-align: center;
+}
+
+
+.tarjeta {
+  background-color: #7cdacc;
+  border: 3px solid #2cb5a0;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
   border-radius: 10px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  height: 471px;
+}
+
+.tarjeta h4,p {
+  text-align: center;
+}
+
+.titulo {
   display: flex;
-  flex-shrink: 0;
-  font-size: 100px;
-  height: 600px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  flex-direction: column;
+}
+
+.puntuacion {
+  display: flex;
   justify-content: center;
-  margin: 0 1rem;
-  position: relative;
-  transform: scale(1);
-  transform-origin: center center;
-  transition: transform .5s;
-  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 15px;
 }
 
-.carousel__nav {
-  padding: 1.25rem .5rem;
+.estrellas {
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
-.slider-nav {
-  align-items: center;
-  background-color: #ddd;
-  border-radius: 50%;
-  color: #000;
-  display: inline-flex;
-  height: 1.5rem;
-  justify-content: center;
-  padding: .5rem;
-  position: relative;
-  text-decoration: none;
-  width: 1.5rem;
+.checked {
+  color: orange;
 }
 
-.slider-nav:hover,
-.slider-nav:active {
-  background-color: #000;
-  color: #fff;
+.nombreEstrella {
+  display: flex;
+  flex-direction: column;
 }
 
-.slide-1 {
-  background-color: #fdc;
-}
-
-.slide-2 {
-  background-color: #bfd;
-}
-
-.slide-3 {
-  background-color: #cdf;
-}
-
-.slide-4 {
-  background-color: #dca;
-}
-
-.slide-5 {
-  background-color: #ffc;
-}
 
 
