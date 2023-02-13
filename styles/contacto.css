@@ -1,0 +1,286 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(../imagenes/fondo.webp);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #7ED9C3;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.actual {
+    text-decoration-line:underline overline;
+    transition: 0.5s ease;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 20%;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img {
+    height: 50px;
+    display: flex;
+
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 20%;
+    height: 80px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.contacto {
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contacto p {
+    background-color: #CEF0DE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px 15px 5px 15px;
+    font-weight: bold;
+    
+}
+
+.formulario {
+    gap: 30px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #78CBCF;
+    backdrop-filter: blur( 2px );
+    border: 1px solid #ffffff2e;
+    border-radius: 16px;
+    padding: 32px;
+    width: 250px;
+    box-shadow: 16px 18px 12px rgba(18, 18, 18, 0.04), 50px 60px 102px rgba(18, 18, 18, 0.1);
+  }
+  
+  /*titulos formulario*/
+  .title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  
+  /*Caja imputs*/
+  .form-container {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .75rem;
+    padding: 8px 15px;
+  }
+
+  .form a {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .form a:hover {
+    color: black;
+  }
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+  }
+
+  .soporte {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+button {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+ background: #78CBCF;
+ font-family: "Montserrat", sans-serif;
+ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ border: none;
+ cursor: pointer;
+}
+
+button:after {
+ content: " ";
+ width: 0%;
+ height: 100%;
+ background: #FFD401;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
+}
+
+button:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
+}
+
+button span {
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ padding: 18px 25px;
+ color: #fff;
+ font-size: 1.125em;
+ font-weight: 700;
+ letter-spacing: 0.3em;
+ z-index: 20;
+ transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+ color: #183153;
+ animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+ 0% {
+  transform: scale(1);
+ }
+
+ 50% {
+  transform: scale(0.95);
+ }
+
+ 100% {
+  transform: scale(1);
+ }
+}
+
+
+
+
+@media (max-width: 700px) {
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
+
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 415px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .redes img {
+            flex-direction: column;
+            height: 20px;
+            display: flex;
+        
+    }
+
+    .pie {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1125px) {
+    .contacto {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}

@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(../imagenes/fondo.webp);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #7ED9C3;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 20%;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img {
+    height: 50px;
+    display: flex;
+
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 20%;
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.actual {
+    text-decoration-line:underline overline;
+    transition: 0.5s ease;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.mapa iframe {
+    height: 800px;
+    width: 1000px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.favoritos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #2e2d31;
+    background: #131313;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: #131313;
+  }
+  
+  .temporary_text {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 6px 12px;
+    color: #f8f8f8;
+  }
+  
+  .card_title {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+  }
+  
+  .card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 19px;
+    background: #7ED9C3;
+    border-top-left-radius: 20px;
+    transform: translateY(150px);
+    transition: transform .25s;
+  }
+  
+  .card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+  }
+  
+  .card_title {
+    color: #131313;
+    line-height: 15px;
+  }
+  
+  .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  
+  .card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    margin-right: 15px;
+  }
+  
+  .card:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+
+  .truji {
+    width: 350px;
+    margin-top: -100px;
+    margin-left: -20px;
+  }
+
+  .gozo {
+    width: 350px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+   
+
+@media (max-width: 820px) {
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    main {
+        margin-left: 30px;
+        gap: 15px;
+    }
+
+    .mapa {
+        margin-left: 20px;
+    }
+
+    .mapa iframe {
+        height: 550px;
+        width: 350px;        
+    }
+
+    .favoritos {
+        margin-top: 45px;
+    }
+
+    .card {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        color: #2e2d31;
+        background: #131313;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      
+      .temporary_text {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 6px 12px;
+        color: #f8f8f8;
+      }
+      
+      .card_title {
+        font-weight: bold;
+      }
+      
+      .card_content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          /* edit the width to fit card */
+        width: 100%;
+        padding: 20px;
+        background: #f2f2f2;
+        border-top-left-radius: 20px;
+          /* edit here to change the height of the content box */
+        transform: translateY(150px);
+        transition: transform .25s;
+      }
+      
+      .card_content::before {
+        content: '';
+        position: absolute;
+        top: -47px;
+        right: -45px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-175deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 48px #f2f2f2;
+      }
+      
+      .card_title {
+        color: #131313;
+        line-height: 15px;
+      }
+      
+      .card_subtitle {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+      }
+      
+      .card_description {
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        margin-right: 15px;
+      }
+      
+      .card:hover .card_content {
+        transform: translateY(0);
+      }
+      
+      .card:hover .card_description {
+        opacity: 1;
+        transition-delay: .25s;
+      }
+    
+    .redes {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-height: 1400px) {
+    /* header {
+        flex-direction: column;
+    } */
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .redes img {
+            flex-direction: column;
+            height: 20px;
+            display: flex;
+        
+    }
+
+    .mapa iframe {
+        width: 350px;
+    }
+
+
+    .pie {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        padding-right: 50px;
+    }
+
+    .redes img {
+            flex-direction: column;
+            height: 20px;
+            display: flex;
+        
+    }
+
+    .card {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        color: #2e2d31;
+        background: #131313;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      
+      .temporary_text {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 6px 12px;
+        color: #f8f8f8;
+      }
+      
+      .card_title {
+        font-weight: bold;
+      }
+      
+      .card_content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          /* edit the width to fit card */
+        width: 100%;
+        padding: 20px;
+        background: #f2f2f2;
+        border-top-left-radius: 20px;
+          /* edit here to change the height of the content box */
+        transform: translateY(150px);
+        transition: transform .25s;
+      }
+      
+      .card_content::before {
+        content: '';
+        position: absolute;
+        top: -47px;
+        right: -45px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-175deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 48px #f2f2f2;
+      }
+      
+      .card_title {
+        color: #131313;
+        line-height: 15px;
+      }
+      
+      .card_subtitle {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+      }
+      
+      .card_description {
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        margin-right: 15px;
+      }
+      
+      .card:hover .card_content {
+        transform: translateY(0);
+      }
+      
+      .card:hover .card_description {
+        opacity: 1;
+        transition-delay: .25s;
+      }
+
+    .mapa iframe {
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .pie {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
