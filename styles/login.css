@@ -163,6 +163,14 @@ a {
     font-weight: bold;
   }
 
+  .formulario {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 90px;
+    margin-bottom: 230px;
+}
+
 
   @media (max-width: 700px) {
     header {
@@ -224,12 +232,4 @@ a {
         flex-direction: column;
         padding: 5px;
     }
-}
-
-.formulario {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-top: 90px;
-    margin-bottom: 230px;
 }
