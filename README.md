@@ -17,7 +17,7 @@ Dichos puntos se los podrás entregar a una asociación de animales de España, 
 de convertir esos puntos en dinero para ayudar entre todos a los animales más necesitados.
 
 Por otro lado, si eres propietario de un restaurante, alojamiento, cafetería, etc.. puedes mandar un
-mail o adjuntar un ticket si deseas tú sitio sea añadido al mapa.
+mail o adjuntar un ticket si deseas que tú sitio sea añadido al mapa.
 
 ## PROTOTIPO<a name="id2"></a>
 https://www.figma.com/file/nnhxy3IiPUAEIefK8BZd0M/Untitled?node-id=0%3A1&t=DfH2bgToSOarS6Hq-0
