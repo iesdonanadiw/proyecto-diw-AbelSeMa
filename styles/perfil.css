@@ -331,7 +331,7 @@ a {
   flex-direction: column;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   header {
       height: 100%;
       flex-direction: column;
@@ -339,6 +339,10 @@ a {
 
   nav {
       padding: 10px 0px;
+  }
+
+  .descripcion {
+    flex-direction: column;
   }
   
   .redes {
