@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -98,12 +148,18 @@ main {
 }
 
 .mapa {
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 50px;
 }
 
 .mapa iframe {
     height: 800px;
     width: 1000px;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 .favoritos {
@@ -120,6 +176,8 @@ main {
     background: #131313;
     overflow: hidden;
     border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: #131313;
   }
   
   .temporary_text {
@@ -130,19 +188,19 @@ main {
   }
   
   .card_title {
-    font-weight: bold;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
   }
   
   .card_content {
     position: absolute;
     left: 0;
     bottom: 0;
-      /* edit the width to fit card */
     width: 100%;
-    padding: 20px;
-    background: #f2f2f2;
+    padding: 19px;
+    background: #7ED9C3;
     border-top-left-radius: 20px;
-      /* edit here to change the height of the content box */
     transform: translateY(150px);
     transition: transform .25s;
   }
@@ -188,13 +246,13 @@ main {
   }
 
   .truji {
-    width: 250px;
+    width: 350px;
     margin-top: -100px;
     margin-left: -20px;
   }
 
   .gozo {
-    width: 250px;
+    width: 350px;
     margin-top: -10px;
     margin-left: -10px;
   }
@@ -309,38 +367,10 @@ main {
 }
 
 
-@media (max-width: 415px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .redes img {
-            flex-direction: column;
-            height: 20px;
-            display: flex;
-        
-    }
-
-    .mapa iframe {
-        width: 350px;
-    }
-
-
-    .pie {
-        flex-direction: column;
-        padding: 5px;
-    }
-}
-
 @media (max-height: 1400px) {
-    header {
+    /* header {
         flex-direction: column;
-    }
+    } */
 
     nav {
         padding-left: 10px;
