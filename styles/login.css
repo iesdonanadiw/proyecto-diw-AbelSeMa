@@ -31,6 +31,8 @@ nav a:hover {
     text-decoration-line:underline overline;
     transition: 0.5s ease;
 }
+
+
 footer {
     display: flex;
     flex-direction: column;
