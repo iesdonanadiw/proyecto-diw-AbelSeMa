@@ -58,5 +58,5 @@ Listado de cambios menores o pequeños retoques visuales:
 - Tailwind: https://tailwindcss.com/docs
 - W3C CSS Validator: https://jigsaw.w3.org/css-validator/
 - W3C HTML Validator: https://validator.w3.org/
-- UIVERSE.io (Herramienta de generación de código css con estilos definidos)
-- Codepen.io (Herramienta de generación de código css y js)
+- UIVERSE.io: https://www.uiverse.io
+- Codepen.io: https://www.codepen.io
