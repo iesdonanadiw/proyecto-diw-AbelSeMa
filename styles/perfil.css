@@ -397,11 +397,6 @@ a {
 }
 
 @media (min-width: 720px) {
-  header {
-      height: 100%;
-      flex-direction: column;
-  }
-
   nav {
       padding: 10px 0px;
   }
