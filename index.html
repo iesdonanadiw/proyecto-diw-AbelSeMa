@@ -13,9 +13,10 @@
 </head>
 
 <body>
+  <audio src="./audio/bk-sound.mp3" preload="auto" autoplay></audio>
   <header class="encabecado">
     <a href="#" class="logo">
-      <img src="imagenes/logo.png" alt="">
+      <img src="imagenes/logo.svg" alt="">
       <h2 class="nombre">Come con tu mascota</h2>
     </a>
 
@@ -25,6 +26,31 @@
       <a href="login.html" class="nav-link">Entrar</a>
     </nav>
   </header>
+
+  <div class="gato">
+    <details>
+      <summary>Depliega para conocer a nuestra mascota!</summary>
+      <img src="./imagenes/logo.gif" alt="Kitty" style="height: 400px; ">
+    </details>
+
+    <div class="contacto">
+      <button id="modal" onclick="document.getElementById('contacto').showModal()">Detalles de contacto</button>
+    <dialog id="contacto">
+      <p>Puedes contactar con nostros a través de:
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li>Gmail: comecontumascota@gmail.com</li>
+          <li>Tlfn: 9568888777</li>
+        </ul>
+      </p>
+      <button id="cerrar" class="boton" onclick="document.getElementById('contacto').close()">CERRAR</button>
+    </div>
+
+    </dialog>
+  </div>
+
 
   <div class="presentacion">
     <h1 class="titulo">
@@ -45,6 +71,7 @@
   <div class="mapa">
     <iframe src="https://www.google.com/maps/d/embed?mid=1MnESAfacZPNX0B8F7hh9dDFIqfnrvt4&ehbc=2E312F"></iframe>
   </div>
+
 
   <footer class="pie">
     <div class="redes">

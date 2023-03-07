@@ -1,3 +1,9 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: url(../imagenes/fondo.webp);
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -103,10 +109,10 @@ a {
     width: 200px;
     right: 50%;
     margin:  0px 0px 0px 25px;
-    -webkit-animation-name: vibrate;
-    -webkit-animation-duration: 0.7s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+    animation-name: vibrate;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
 
@@ -159,10 +165,10 @@ a {
 
 
 .annoying-dog:hover {
-  -webkit-animation-name: vibrate;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  animation-name: vibrate;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes vibrate {

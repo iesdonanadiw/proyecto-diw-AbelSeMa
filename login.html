@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Come con tu mascota</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
     <link rel="stylesheet" href="./styles/login.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
@@ -15,7 +16,7 @@
     <div class="container">
         <header class="encabecado">
             <a href="index.html" class="logo">
-                <img src="imagenes/logo.png" alt="">
+                <img src="imagenes/logo.svg" alt="">
                 <h2 class="nombre">Come con tu mascota</h2>
             </a>
 
@@ -26,21 +27,25 @@
             </nav>
         </header>
 
-        <div class="formulario">
-            <form class="form">
-                <span class="title">¿Tienes una cuenta?</span>
-                <div class="form-container">
-                    <input type="email" class="input" placeholder="Email">
-                    <input type="password" class="input" placeholder="Password">
-                </div>
-                <button>
-                    <a href="perfil.html">INICIAR SESIÓN</a>
-                </button>
-                <a href="registro.html">¿No tienes una cuenta? Registrate</a>
-            </form>
-        </div>
-
+        <main id="hero">
+            <div class="formulario">
+                <form class="form">
+                    <span class="title">¿Tienes una cuenta?</span>
+                    <div class="form-container">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Password">
+                    </div>
+                    <button>
+                        <a href="perfil.html">INICIAR SESIÓN</a>
+                    </button>
+                    <a href="registro.html">¿No tienes una cuenta? Registrate</a>
+                </form>
+            </div>
     </div>
+    </main>
+    <video autoplay loop class="video">
+        <source src="./video/testimonio.mp4" type="video/mp4">
+    </video>
     <footer class="pie">
         <div class="redes">
 
