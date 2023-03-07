@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 20%;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img {
+    height: 50px;
+    display: flex;
+    opacity: 50%;
+
+}
+.redes img:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}

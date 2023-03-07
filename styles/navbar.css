@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(../imagenes/fondo.webp);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 20%;
+    height: 80px;
+    margin-right: 10px;
+    animation: logo 5s;
+}
+
+@keyframes logo {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.presentacion {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.presentacion h1 {
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.presentacion p {
+    display: flex;
+    justify-content: center;
+    background-color: #CEF0DE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #7ED9C3;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.actual {
+    text-decoration-line:underline overline;
+    transition: 0.5s ease;
+}
