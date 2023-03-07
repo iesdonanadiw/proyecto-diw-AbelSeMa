@@ -141,6 +141,7 @@ footer img {
   border-radius: 20%;
   height: 80px;
   margin-right: 10px;
+  animation-name: logo;
 }
 
 a {
