@@ -1,198 +1,328 @@
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
+
 .contacto {
-    margin-top: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-top: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
 .contacto p {
-    background-color: #CEF0DE;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    border-style: solid;
-    padding: 5px 15px 5px 15px;
-    font-weight: bold;
-    
+  background-color: #CEF0DE;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px 15px 5px 15px;
+  font-weight: bold;
+
 }
 
 .formulario {
-    gap: 30px;
+  gap: 30px;
 }
 
 .form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: #78CBCF;
-    backdrop-filter: blur( 2px );
-    border: 1px solid #ffffff2e;
-    border-radius: 16px;
-    padding: 32px;
-    width: 250px;
-    box-shadow: 16px 18px 12px rgba(18, 18, 18, 0.04), 50px 60px 102px rgba(18, 18, 18, 0.1);
-  }
-  
-  /*titulos formulario*/
-  .title {
-    font-weight: 700;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #78CBCF;
+  backdrop-filter: blur(2px);
+  border: 1px solid #ffffff2e;
+  border-radius: 16px;
+  padding: 32px;
+  width: 250px;
+  box-shadow: 16px 18px 12px rgba(18, 18, 18, 0.04), 50px 60px 102px rgba(18, 18, 18, 0.1);
+}
+
+/*titulos formulario*/
+.title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+/*Caja imputs*/
+.form-container {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .75rem;
+  padding: 8px 15px;
+}
+
+.form a {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form a:hover {
+  color: black;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.soporte {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pet-me {
+  color: white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.annoying-dog {
+  width: 200px;
+}
+
+  .pet-me {
+    color: white;
     text-align: center;
-    font-size: 1.7rem;
-  }
-  
-  /*Caja imputs*/
-  .form-container {
-    overflow: hidden;
-    border-radius: 12px;
-    background-color: #fff;
-    width: 100%;
-  }
-  
-  .input {
-    background: none;
-    border: 0;
-    outline: 0;
-    height: 40px;
-    width: 100%;
-    border-bottom: 1px solid #eee;
-    font-size: .75rem;
-    padding: 8px 15px;
+    font-family: 'Press Start 2P', cursive;
   }
 
-  .form a {
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
+  .annoying-dog {
+    width: 200px;
+    right: 50%;
+    margin:  0px 0px 0px 25px;
+    -webkit-animation-name: vibrate;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
   }
 
-  .form a:hover {
-    color: black;
+
+  @keyframes vibrate {
+    0% {
+      -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    10% {
+      -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+      -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+      -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+
+    40% {
+      -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+      -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+      -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+      -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    80% {
+      -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+      -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: translate(1px, -2px)
+    }
   }
 
-  .formulario {
-    display: flex;
-    justify-content: center;
+
+
+.annoying-dog:hover {
+  -webkit-animation-name: vibrate;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
   }
 
-  .soporte {
-    font-size: 15px;
-    font-weight: bold;
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
   }
+
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(1px, -2px)
+  }
+}
 
 button {
- position: relative;
- display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 5px;
- background: #78CBCF;
- font-family: "Montserrat", sans-serif;
- box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
- overflow: hidden;
- border: none;
- cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #78CBCF;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
 }
 
 button:after {
- content: " ";
- width: 0%;
- height: 100%;
- background: #FFD401;
- position: absolute;
- transition: all 0.4s ease-in-out;
- right: 0;
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFD401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
 }
 
 button:hover::after {
- right: auto;
- left: 0;
- width: 100%;
+  right: auto;
+  left: 0;
+  width: 100%;
 }
 
 button span {
- text-align: center;
- text-decoration: none;
- width: 100%;
- padding: 18px 25px;
- color: #fff;
- font-size: 1.125em;
- font-weight: 700;
- letter-spacing: 0.3em;
- z-index: 20;
- transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover span {
- color: #183153;
- animation: scaleUp 0.3s ease-in-out;
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
 }
 
 @keyframes scaleUp {
- 0% {
-  transform: scale(1);
- }
+  0% {
+    transform: scale(1);
+  }
 
- 50% {
-  transform: scale(0.95);
- }
+  50% {
+    transform: scale(0.95);
+  }
 
- 100% {
-  transform: scale(1);
- }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
 
 
 @media (max-width: 700px) {
-    header {
-        height: 100%;
-        flex-direction: column;
-    }
+  header {
+    height: 100%;
+    flex-direction: column;
+  }
 
-    nav {
-        padding: 10px 0px;
-    }
+  nav {
+    padding: 10px 0px;
+  }
 
-    .redes {
-        flex-direction: column;
-    }
+  .redes {
+    flex-direction: column;
+  }
 
-    .formulario {
-        flex-direction: column;
-        align-items: center;
-    }
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
 @media (max-width: 415px) {
-    header {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
-    nav {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .redes img {
-            flex-direction: column;
-            height: 20px;
-            display: flex;
-        
-    }
+  .redes img {
+    flex-direction: column;
+    height: 20px;
+    display: flex;
 
-    .pie {
-        flex-direction: column;
-        padding: 5px;
-    }
+  }
+
+  .pie {
+    flex-direction: column;
+    padding: 5px;
+  }
 }
 
 @media (min-width: 1125px) {
-    .contacto {
-        margin-right: 25%;
-        margin-left: 25%;
-    }
+  .contacto {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
 }
