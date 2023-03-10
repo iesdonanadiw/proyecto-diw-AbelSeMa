@@ -52,7 +52,27 @@ Listado de cambios menores o pequeños retoques visuales:
         de forma que ahora serán más pequeñas y la información se mostrará al 
         pasar el ratón (o pulsando en caso de la versión móvil).
     -
-## RECURSOS<a name="id4"></a>
+
+## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id4"></a>
+Cambios para la entrega 4:
+    - Transiciones:
+        * Añadidas las transiciones a los botones del menú (navbar) en todas las páginas.
+        * Añadidas las transiciones a las imágenes de las RRSS en el footer en todas las páginas.
+        * Añadidas las transiciones a los botoenes del formulario en la página de contacto.html
+
+    - Animaciones:
+        * Añadida la animación al logo que se encuentra en el menú en todas las páginas.
+        * Añadida la animación en la página de contacto justo debajo del botón "chat". (Sorry por la animación que es feísima, pero no me daba tiempo a más)
+
+    - Videos:
+        * Añadido los videos:
+            - Se ha utilizado el video de fondo en la página login.html
+            - Se han añadido dos videos en el página index.html al pie de la misma.
+
+    - Audio:
+        * Añadido el audio de fondo en la página index.html
+    
+## RECURSOS<a name="id5"></a>
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/
 - Tailwind: https://tailwindcss.com/docs
