@@ -55,6 +55,7 @@ Listado de cambios menores o pequeños retoques visuales:
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id4"></a>
 Cambios para la entrega 4:
+
     - Transiciones:
         * Añadidas las transiciones a los botones del menú (navbar) en todas las páginas.
         * Añadidas las transiciones a las imágenes de las RRSS en el footer en todas las páginas.
