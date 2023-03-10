@@ -57,21 +57,20 @@ Listado de cambios menores o pequeños retoques visuales:
 Cambios para la entrega 4:
 
     - Transiciones:
-        * Añadidas las transiciones a los botones del menú (navbar) en todas las páginas.
-        * Añadidas las transiciones a las imágenes de las RRSS en el footer en todas las páginas.
-        * Añadidas las transiciones a los botoenes del formulario en la página de contacto.html
+        Añadidas las transiciones a los botones del menú (navbar) en todas las páginas.
+        Añadidas las transiciones a las imágenes de las RRSS en el footer en todas las páginas.
+        Añadidas las transiciones a los botoenes del formulario en la página de contacto.html
 
     - Animaciones:
-        * Añadida la animación al logo que se encuentra en el menú en todas las páginas.
-        * Añadida la animación en la página de contacto justo debajo del botón "chat". (Sorry por la animación que es feísima, pero no me daba tiempo a más)
+        Añadida la animación al logo que se encuentra en el menú en todas las páginas.
+        Añadida la animación en la página de contacto justo debajo del botón "chat". (Sorry por la animación que es feísima, pero no me daba tiempo a más)
 
     - Videos:
-        * Añadido los videos:
-            - Se ha utilizado el video de fondo en la página login.html
-            - Se han añadido dos videos en el página index.html al pie de la misma.
+        Se ha utilizado el video de fondo en la página login.html
+        Se han añadido dos videos en el página index.html al pie de la misma.
 
     - Audio:
-        * Añadido el audio de fondo en la página index.html
+        Añadido el audio de fondo en la página index.html
     
 ## RECURSOS<a name="id5"></a>
 - Can I use?: https://caniuse.com/
