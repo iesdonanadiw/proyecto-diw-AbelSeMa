@@ -5,7 +5,8 @@
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
-4. [RECURSOS](#id4)
+3. [MODIFICACIONES ENTREGA 4](#id4)
+4. [RECURSOS](#id5)
 
 ## DESCRIPCIÓN<a name="id1"></a>
 Come con tu mascota es un sitio web donde podrás encontrar todos los lugares cerca de ti
